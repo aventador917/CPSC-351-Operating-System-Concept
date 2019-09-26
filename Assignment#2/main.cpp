@@ -1,12 +1,3 @@
-/*
-	Paul Tang(Zhiyuan Tang)
-
-	CPSC 351
-	September 26, 2019
-
-	assignment#2
-*/
-
 #include <iostream>
 #include <windows.h>
 #include <string.h>
