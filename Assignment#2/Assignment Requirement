@@ -7,7 +7,11 @@ Be sure to include your name at the top of each source file submitted. For examp
 //
 
 Interactive Shell:
-Write a C/C++ program to implement an interactive shell in which users can execute commands. Call this program myShell. Create an infinite loop (while(1)) that repeatedly prompts the user to enter a command (see example output and input below). Consider using fgets() to read a line of input from the user. Before executing the command entered by the user, the command must be compared against the list of supported commands shown here:
+Write a C/C++ program to implement an interactive shell in which users can execute commands.
+Call this program myShell. 
+Create an infinite loop (while(1)) that repeatedly prompts the user to enter a command (see example output and input below).
+Consider using fgets() to read a line of input from the user. 
+Before executing the command entered by the user, the command must be compared against the list of supported commands shown here:
 
 dir
 help
@@ -19,7 +23,8 @@ echo
 color
 ping
 
-Since some commands require more than one argument (e.g. echo, color, ping), you will need to parse the user input into its arguments. Consider using the strtok() function.
+Since some commands require more than one argument (e.g. echo, color, ping), you will need to parse the user input into its arguments. 
+Consider using the strtok() function.
 
 For example:
 
@@ -29,7 +34,10 @@ ping 192.168.1.1
 ARGUMENT 0: "ping"
 ARGUMENT 1: "192.168.1.1"
 
-If the command in argument[0] is in the list above, your program must execute the command in a child thread via CreateThread(). In other words, create a child thread that executes the command. The parent thread waits for the child to terminate. If the user types exit or quit, your shell should simply terminate. Sample output and input are shown below:
+If the command in argument[0] is in the list above, your program must execute the command in a child thread via CreateThread(). 
+In other words, create a child thread that executes the command. 
+The parent thread waits for the child to terminate. If the user types exit or quit, your shell should simply terminate. 
+Sample output and input are shown below:
 
 Welcome to myShell
 
@@ -70,4 +78,6 @@ Approximate round trip times in milli-seconds:
 
 Thanks for using myShell!
 
-Assumptions: Assume arguments within myShell do not contain spaces. In other words, don't worry about parsing out quoted strings in your argument list (e.g.cat a.txt "some file.txt"). You may assume that no more than four arguments will be used on the command line (i.e. similar to argv[0], argv[1], argv[2], and argv[3]).
+Assumptions: Assume arguments within myShell do not contain spaces. 
+In other words, don't worry about parsing out quoted strings in your argument list (e.g.cat a.txt "some file.txt"). 
+You may assume that no more than four arguments will be used on the command line (i.e. similar to argv[0], argv[1], argv[2], and argv[3]).
