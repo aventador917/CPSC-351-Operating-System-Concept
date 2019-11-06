@@ -1,11 +1,3 @@
-/*
-Paul Tang
-
-CPSC 351
-October 25, 2019
-
-Assignment#3
-*/
 
 #include<iostream>
 #include<thread>
